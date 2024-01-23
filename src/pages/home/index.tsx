@@ -116,7 +116,7 @@ export default function HomePage() {
                                     <div className="post__box-content">{post?.content}</div>
                                 </div>
                             </Link>
-                            <div className="post__boc-footer">
+                            <div className="post__box-footer">
                                 {/* post.uid === user.uid 일 때 */}
                                 <>
                                     <button type="button" className="post__delete" onClick={handleDelete}>Delete</button>
