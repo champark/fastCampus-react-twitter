@@ -2,7 +2,7 @@ $background: #1e293b;
 $activeBg: #3c495f5f;
 $white: #ffffff;
 $border: #708090;
-$promaryColor: #60a5fa;
+$primaryColor: #60a5fa;
 $grayText: #9ca3af;
 $activeBorder: #3b82f6;
 $danger: #dc2626;
@@ -71,8 +71,55 @@ body {
       border-bottom: 2px solid $activeBorder;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $activeBg;
     }
+  }
+}
+
+.post-form {
+  &__textarea {
+    font-family: $font;
+    min-height: 120px;
+    display: block;
+    width: calc(100% - 32px);
+    padding: 16px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 1px solid $border;
+
+    &::placeholder {
+      font-family: $font;
+      color: $grayText;
+      font-size: 20px;
+    }
+  }
+
+  &__submit-area {
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid $border;
+
+    .post-form__file {
+      display: flex;
+      padding: 0 1rem;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+
+  &__submit-btn {
+    @extend .button;
+    padding: 0.5rem 1rem;
+    background-color: $primaryColor;
   }
 }
