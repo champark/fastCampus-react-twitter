@@ -125,7 +125,7 @@ export default function HomePage() {
                                         <AiFillHeart />
                                         {post?.likeCounte || 0}
                                     </button>
-                                    <button type="button" className="post__edit">
+                                    <button type="button" className="post__comments">
                                         <FaRegComment />
                                         {post?.comments?.length || 0}
                                     </button>
