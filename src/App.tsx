@@ -12,11 +12,11 @@ function App() {
     !!auth?.currentUser
   );
 
-  console.log(auth, isAuthenticated);
+  //console.log(auth, isAuthenticated);
 
   return (
     <Layout>
-      <Router />
+      <Router isAuthenticated={isAuthenticated} />
     </Layout>
   );
 }
